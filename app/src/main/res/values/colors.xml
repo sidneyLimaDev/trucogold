@@ -15,5 +15,9 @@
     <color name="dark_background">#282a2b</color>
     <color name="dark_nav_bar">#38393a</color>
 
+    <!-- Selection Colors -->
+    <color name="nav_selected_icon">#42753C</color>
+    <color name="nav_selected_bg">#91d78a</color>
+
     <color name="splash_background">#121414</color>
 </resources>

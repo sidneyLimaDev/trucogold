@@ -5,6 +5,8 @@
         <item name="colorSecondary">@color/light_secondary</item>
         <item name="android:windowBackground">@color/light_background</item>
         <item name="colorSurface">@color/light_nav_bar</item>
+        <item name="navSelectedIconColor">@color/white</item>
+        <item name="navSelectedBgColor">@color/light_primary</item>
     </style>
 
     <style name="Theme.Trucogold" parent="Base.Theme.Trucogold" />

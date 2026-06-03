@@ -5,5 +5,7 @@
         <item name="colorSecondary">@color/dark_secondary</item>
         <item name="android:windowBackground">@color/dark_background</item>
         <item name="colorSurface">@color/dark_nav_bar</item>
+        <item name="navSelectedIconColor">@color/nav_selected_icon</item>
+        <item name="navSelectedBgColor">@color/nav_selected_bg</item>
     </style>
 </resources>
