@@ -9,6 +9,9 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class HomeFragment : Fragment(), WinnerDialogFragment.WinnerDialogListener {
 
@@ -120,6 +123,19 @@ class HomeFragment : Fragment(), WinnerDialogFragment.WinnerDialogListener {
     }
 
     private fun showWinner(name: String) {
+        val dateFormat = SimpleDateFormat("dd/MM, HH:mm", Locale.getDefault())
+        val dateString = dateFormat.format(Date())
+
+        val match = Match(
+            team1Name = tvLabelNos.text.toString(),
+            team2Name = tvLabelEles.text.toString(),
+            team1Score = if (quedasNos >= 2) maxScore else scoreNos,
+            team2Score = if (quedasEles >= 2) maxScore else scoreEles,
+            date = dateString,
+            team1Won = quedasNos >= 2
+        )
+        HistoryManager(requireContext()).saveMatch(match)
+
         val dialog = WinnerDialogFragment.newInstance(name)
         dialog.setListener(this)
         dialog.show(parentFragmentManager, "winner_dialog")

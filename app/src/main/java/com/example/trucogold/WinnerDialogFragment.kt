@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
+import androidx.core.graphics.drawable.toDrawable
 
 class WinnerDialogFragment : DialogFragment() {
 
@@ -38,7 +39,7 @@ class WinnerDialogFragment : DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog?.window?.setBackgroundDrawable(Color.TRANSPARENT.toDrawable())
         return inflater.inflate(R.layout.dialog_winner, container, false)
     }
 
