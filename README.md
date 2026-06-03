@@ -3,7 +3,7 @@
 **Truco Gold** é um marcador de pontos intuitivo e elegante para partidas de Truco, desenvolvido como trabalho de conclusão da disciplina de Android Básico da **UTFPR**.
 
 O design do aplicativo foi inspirado no projeto criado pelo **Stitch do Google**: [Visualizar Design](https://stitch.withgoogle.com/projects/6432633878129282379).
-
+**Video Funcionando**: [Visualizar](https://youtube.com/shorts/bsg9hBWRSX0)
 ## 🚀 Funcionalidades
 
 - **Marcador de Pontos:** Controle fácil da pontuação de "Nós" e "Eles" com botões de incremento (+1, +3, +6, +9, +12) e decremento.
