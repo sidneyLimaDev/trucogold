@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regras do Truco"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo: Como Jogar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cada jogador recebe 3 cartas. A partida é dividida em 'mãos' e cada mão em 3 rodadas. Ganha a mão quem vencer 2 das 3 rodadas. A primeira mão vale 1 ponto, mas pode ser 'trucada' para valer mais."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Jogo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Truco é jogado com o baralho espanhol ou francês (sem os 8, 9, 10 e coringas). O objetivo é chegar a 12 pontos antes dos adversários."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hierarquia das Cartas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Da maior para a menor:\n1. 4 de Paus (Zap)\n2. 7 de Copas\n3. Ás de Espadas (Espadilha)\n4. 7 de Ouros (Pica-fumo)\n5. 3, 2, Ás, K, J, Q, 7, 6, 5, 4"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O Grito de 'Truco!'"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A qualquer momento, um jogador pode pedir 'Truco'. Isso eleva o valor da rodada de 1 para 3 pontos. O adversário pode:\n- Correr: Perde 1 ponto.\n- Aceitar: A rodada vale 3 pontos.\n- Retruco: Aumenta para 6 pontos.\n- Vale 9: Aumenta para 9 pontos.\n- Vale 12: Aumenta para 12 pontos."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manilhas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="As manilhas são as cartas mais fortes do jogo. No Truco Paulista, elas mudam a cada rodada (a carta seguinte à 'vira'). No Truco Mineiro, as manilhas são fixas (Zap, 7 Copas, Espadilha, 7 Ouros)."
+            android:textSize="16sp"
+            android:layout_marginBottom="32dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

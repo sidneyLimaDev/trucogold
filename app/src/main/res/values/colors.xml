@@ -2,5 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Light Palette -->
+    <color name="light_primary">#cba72f</color>
+    <color name="light_secondary">#173628</color>
+    <color name="light_background">#e1e3e1</color>
+    <color name="light_nav_bar">#ffffff</color>
+
+    <!-- Dark Palette -->
+    <color name="dark_primary">#91d78a</color>
+    <color name="dark_secondary">#e9c349</color>
+    <color name="dark_background">#282a2b</color>
+    <color name="dark_nav_bar">#38393a</color>
+
     <color name="splash_background">#121414</color>
 </resources>
