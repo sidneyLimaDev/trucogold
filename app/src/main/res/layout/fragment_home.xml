@@ -1,12 +1,339 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Column Nós -->
+    <LinearLayout
+        android:id="@+id/cardNos"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Home Fragment"
-        android:textSize="24sp" />
-</FrameLayout>
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_truco_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardEles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLabelNos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time 1"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_truco_score">
+
+            <TextView
+                android:id="@+id/tvScoreNos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/dark_secondary"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Dots -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dotNos1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_nav_active_bg"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/dotNos2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_nav_active_bg"
+                android:alpha="0.3" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnNosPlus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_truco_btn_gold"
+            android:text="+1"
+            android:textColor="@color/black"
+            app:backgroundTint="@null" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/btnNosPlus3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+3"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnNosPlus6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+6"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnNosPlus9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+9"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnNosPlus12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+12"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNosMinus1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_truco_btn_outline"
+                android:text="-1"
+                android:textColor="@color/dark_secondary"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnNosMinus3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_truco_btn_outline"
+                android:text="-3"
+                android:textColor="@color/dark_secondary"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Column Eles -->
+    <LinearLayout
+        android:id="@+id/cardEles"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_truco_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardNos"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvLabelEles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time 2"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_truco_score">
+
+            <TextView
+                android:id="@+id/tvScoreEles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="64sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Dots -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dotEles1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_nav_active_bg"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/dotEles2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/ic_nav_active_bg"
+                android:alpha="0.3" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnElesPlus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_truco_btn_dark"
+            android:text="+1"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@null" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="2">
+
+            <Button
+                android:id="@+id/btnElesPlus3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+3"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnElesPlus6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+6"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnElesPlus9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+9"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnElesPlus12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="+12"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnElesMinus1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="-1"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnElesMinus3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_truco_btn_dark"
+                android:text="-3"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- New Game Button -->
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_truco_btn_red"
+        android:drawableStart="@drawable/ic_refresh"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="NOVO JOGO"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
